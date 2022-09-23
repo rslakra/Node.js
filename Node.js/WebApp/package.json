@@ -1,0 +1,29 @@
+{
+  "name": "WebApp",
+  "version": "1.0.0",
+  "description": "The Node.js WebApp Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEBUG=WebApp,WebApp:* nodemon app.js",
+    "debug": "DEBUG=* nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohtash Lakra",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "4.1.1",
+    "debug": "^4.3.4",
+    "ejs": "^3.1.8",
+    "express": "4.17.1",
+    "mongodb": "^4.9.1",
+    "morgan": "1.10.0",
+    "nodemon": "^2.0.20"
+  },
+  "nodemonConfig": {
+    "restartable": "restart",
+    "delay": 2500,
+    "env": {
+      "PORT": 4000
+    }
+  }
+}

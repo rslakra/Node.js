@@ -1,0 +1,16 @@
+<html>
+    <title>The Node.js WebApp Application</title>
+    <body>
+        <h1><%=title%></h1>
+        <p>Welcome to <%=businessName%>.</p>
+        <hr/>
+        <ul>
+            <% data.map((index) => {
+                %><li><%=index%></li><%
+            }) %>
+            
+        </ul>
+    </body>
+    <hr/>
+    <footer>Copyright@RSLakra Inc.</footer>
+</html>

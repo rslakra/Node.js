@@ -1,0 +1,9 @@
+<html>
+    <title>The Node.js WebApp Application</title>
+    <body>
+        <h1>Dashboard</h1>
+        <p>Welcome to Node.js Application.</p>
+    </body>
+    <hr/>
+    <footer>Copyright@RSLakra Inc.</footer>
+</html>
