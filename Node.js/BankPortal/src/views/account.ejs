@@ -2,10 +2,14 @@
 
   <%- include('transactions', { account : account }) %>
 
-  <% if (account.unique_name == 'credit' && account.balance > 0) { %>
-    <br><a href="/payment">Make a Payment</a>
-  <% } %>
+  <div class="dm-container">
+    <% if (account.unique_name == 'credit' && account.balance > 0) { %>
+      </br>
+      </br>
+      <a href="/payment" class="dm-button dm-blue">Make a Payment</a>
+      </br>
+    <% } %>
+  </div>
 
-  <br><br><a href="/">Back to Accounts Summary</a>
 
 <%- include('footer'); %>

@@ -5,8 +5,7 @@
 <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
 <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-<link rel="stylesheet" href="css/styles-w3.css">
-<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="css/styles.css">
 <link rel="stylesheet" href="css/styles-font-awesome-min.css">
 
 <!-- JavaScript -->
@@ -15,66 +14,60 @@
 <body>
 
   <!-- Sidebar -->
-  <div class="w3-sidebar w3-bar-block w3-blue w3-xxlarge" style="width:70px">
-    <a href="index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i></a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-info-circle"></i></a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-comment-o"></i></a>        
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-search"></i></a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i></a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-globe"></i></a>
-    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-trash"></i></a>
+  <div class="dm-sidebar dm-bar-block dm-blue dm-xxlarge" style="width:70px">
+    <a href="indexBank.html" class="dm-bar-item dm-button"><i class="fa fa-home"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-info-circle"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-comment-o"></i></a>        
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-search"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-envelope"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-globe"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-trash"></i></a>
   </div>
 
   <!-- Sidebar Right Container -->
   <div style="margin-left:70px">
+
     <!-- Header -->
-    <header class="w3-container w3-blue">
-      <!-- <img src="images/logo.png" alt="Banner" style="width: 100%;"> -->
-      <h1>Header</h1>
-      <!-- <img class="w3-bar-item w3-button" src="images/logo.png" alt="Banner" style="width: 5%;"> -->
+    <header class="dm-container dm-blue">
+      <!-- <img src="images/blue_hori_line.png" alt="Banking Portal" style="width: 100%;"> -->
+      <h2>Banking Portal</h2>
     </header>
 
-    <!-- Container -->
-    <!-- <div class="w3-container">
-      <h2>Sidebar Icons with Tabs</h2>
-      <p>Tabs are perfect for single page web applications, or for web pages capable of displaying different subjects.
-        Click on the links below.</p>
-    </div> -->
-
     <!-- Top Menu Items -->
-    <div class="w3-bar w3-blue">
-      <button class="w3-bar-item w3-button" onclick="selectMenuIem('menuItemClass', 'London')">London</button>
-      <button class="w3-bar-item w3-button" onclick="selectMenuIem('menuItemClass', 'Paris')">Paris</button>
-      <button class="w3-bar-item w3-button" onclick="selectMenuIem('menuItemClass', 'Tokyo')">Tokyo</button>
+    <div class="dm-bar dm-blue dm-card-2 notranslate">
+      <a href="#" class="dm-button" onclick="selectMenuIem('menuItemClass', 'Home');">Home</a>
+      <a href="#" class="dm-button" onclick="selectMenuIem('menuItemClass', 'Transfer');">Transer</a>      
+      <a href="#" class="dm-bar-item dm-btn bar-item-hover dm-right" onclick="selectMenuIem('menuItemClass', 'Profile');">Profile</a>
     </div>
 
     <!-- Tab 1 -->
-    <div id="London" class="w3-container menuItemClass">
-      <h2>London</h2>
+    <div id="Home" class="dm-container menuItemClass">
+      <h2>Home</h2>
+      <a href="indexBank.html" class="dm-button">Home</a>
       <p>London is the capital city of England.</p>
       <img src="images/banner-green.png" alt="Banner" style="width: 100%;">
       <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower and Westminster Abbey, site of British monarch coronations. Across the Thames River, the London Eye observation wheel provides panoramic views of the South Bank cultural complex, and the entire city.</p>
     </div>
 
     <!-- Tab 2 -->
-    <div id="Paris" class="w3-container menuItemClass" style="display:none">
-      <h2>Paris</h2>
+    <div id="Transfer" class="dm-container menuItemClass" style="display:none">
+      <h2>Transfer</h2>
       <p>Paris is the capital of France.</p>
       <img src="images/banner-black.png" alt="Banner" style="width: 100%;">
       <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame cathedral, the city is known for its cafe culture and designer boutiques along the Rue du Faubourg Saint-Honoré.</p>
     </div>
 
     <!-- Tab 3 -->
-    <div id="Tokyo" class="w3-container menuItemClass" style="display:none">
-      <h2>Tokyo</h2>
+    <div id="Profile" class="dm-container menuItemClass" style="display:none">
+      <h2>Profile</h2>
       <p>Tokyo is the capital of Japan.</p>
       <img src="images/beach.jpeg" alt="Banner" style="width: 100%;">
       <p>Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate and surrounding woods. The Imperial Palace sits amid large public gardens. The city's many museums offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki theater (in the Edo-Tokyo Museum).</p>
     </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-blue">
-      <h5>Footer</h5>
+    <footer class="dm-container dm-blue">
+      <h5>2022 - Banking Portal @RSL Inc</h5>
     </footer>
 
   </div>

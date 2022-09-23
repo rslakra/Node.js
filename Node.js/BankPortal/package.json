@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/pluralsight-projects/NodeExpress-BankingPortal.git"
+    "url": "https://github.com/rslakra/WebApps.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pluralsight-projects/NodeExpress-BankingPortal/issues"
+    "url": "https://github.com/rslakra/WebApps/issues"
   },
-  "homepage": "https://github.com/pluralsight-projects/NodeExpress-BankingPortal#readme",
+  "homepage": "https://github.com/rslakra/WebApps#readme",
   "dependencies": {
     "cheerio": "^1.0.0-rc.12",
     "ejs": "^3.1.8",

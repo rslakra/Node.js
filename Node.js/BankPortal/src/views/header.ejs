@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles-font-awesome-min.css">
 
-<head>
-  <% if (locals.title) { %>
-    <title>
-      <%= title %>
-    </title>
-  <% } else { %>
-    <title>Node.js Bank Portal</title>
-  <% } %>
-    <link rel='stylesheet' href='/css/styles.css' />
-</head>
+<!-- JavaScript -->
+<script src="js/core.js"></script>
 
 <body>
+
+  <!-- Sidebar -->
+  <div class="dm-sidebar dm-bar-block dm-blue dm-xxlarge" style="width:70px">
+    <a href="/" class="dm-bar-item dm-button"><i class="fa fa-home"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-info-circle"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-comment-o"></i></a>        
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-search"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-envelope"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-globe"></i></a>
+    <a href="#" class="dm-bar-item dm-button"><i class="fa fa-trash"></i></a>
+  </div>
+
+  <!-- Sidebar Right Container -->
+  <div style="margin-left:70px">
+
+    <!-- Header -->
+    <header class="dm-container dm-blue">
+      <!-- <img src="images/blue_hori_line.png" alt="Banking Portal" style="width: 100%;"> -->
+      <h2>Banking Portal</h2>
+    </header>
+
+    <!-- Top Menu Items -->
+    <div class="dm-bar dm-blue dm-card-2 notranslate">
+      <a href="/" class="dm-button"><img src="images/home-v4.png" alt="Home" style="width: 50%;"></a>
+      <a href="/transfer" class="dm-button"><img src="images/money-transfer-icon.png" alt="Transer" style="width: 50%;"></a>
+      <!-- <a href="/profile" class="dm-bar-item dm-btn bar-item-hover dm-right">Profile</a> -->
+      <a href="/profile" class="dm-bar-item dm-btn bar-item-hover dm-right"><img src="images/menu-female.png" alt="Profile" style="width: 50%;"></a>
+    </div>  
